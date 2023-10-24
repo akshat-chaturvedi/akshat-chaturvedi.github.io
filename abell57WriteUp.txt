@@ -1,0 +1,102 @@
+Abell 57 Cloudy Write Up
+CEK:
+For the Abell 57 CEK, I used the dereddened line ratios, as provided by Robin, as input matching for Cloudy.
+I set up the input paramters as follows to obtain the ideal matches:
+title abell57
+sphere
+table star rauch H-Ni solar 4.95424 LOG
+luminosity solar =     4.0000
+HDEN=7.05 LOG
+radius = 16
+abundances planetary nebula          
+metal     1.0000
+iterate
+save last lines, zone cumulative, file="abell57_1.emission"
+"O  2"  3728.81
+"Ne 3" 3868.76
+"O  3" 4363.21
+"O  3" 4960.91
+"O  3" 5006.84
+Blnd 5875.66A
+"H  1" 6562.80A
+"H  1" 4861.32A
+"h  1" 4101.73A
+"h  1" 4340.46A
+"He 1" 6678.15A 
+end of lines
+
+I used Cloudy's optimizing input to vary individual parameters to match for the three known line ratios 
+relative to H-beta, namely H-alpha, [O III] 5007 and He I 5876. The optimizer returned the optimal
+parameters as shown above. 
+
+The paramters assume a log luminosity of the CEK in ergs/s, a log total hydrogen density in cm^-3, a log
+radius in cm, and planetary nebula abundances. I used the Rauch H-Ni stellar atmospheres 
+(as described at http://astro.uni-tuebingen.de/~rauch/TMAF/flux_H-Ni.html)with a log temperature.
+ 
+Faint PN:
+For the surrounding faint PN, I performed a similar analysis, once again using dereddened line ratios provided by Robin.
+I set up cloud, and used the optimizer to obtain the ideal paramters. This run, however, was more difficult,
+as there were significantly more ratios to match. The H-alpha, [O III] 5007 and He I 5876 matched well from the start, 
+but I had the following ratios to match in addition:
+[Ne III] 3689
+[Ar IV] 4711
+O2 Doublet - this wasn't a matching scenario, rather a comparison to 5007 to ensure a good fit
+[N II] 6584
+[S II] 6717
+
+After numerous iterations, I was able to obtain the following parameters which matched H-alpha,
+[O III] 5007, He I 5876 and [Ne III] 3689 well. It also led to a good ratio for the O2 Doublet
+when compared to 5007, implying a good fit. [N II] 6584 and [S II] 6717 however, were not great
+fits. 
+
+The ideal parameters are as follows:
+
+title abell57CSFaint
+sphere
+BLACKbody= 5.082341 LOG
+LUMINOSITY 36.790073 LOG range -0.000232 6.866279
+HDEN=2.662584 LOG
+RADIUS = 0.11 linear parsecs
+abundances planetary nebula
+metal     1.250
+ 
+Here I assume a blackbody temparature in log scale, and assume spherical geometry.
+
+References (in BibTex format):
+Cloudy:
+@ARTICLE{2023RMxAA..59..327C,
+       author = {{Chatzikos}, M. and {Bianchi}, S. and {Camilloni}, F. and {Chakraborty}, P. and {Gunasekera}, C.~M. and {Guzm{\'a}n}, F. and {Milby}, J.~S. and {Sarkar}, A. and {Shaw}, G. and {van Hoof}, P.~A.~M. and {Ferland}, G.~J.},
+        title = "{The 2023 Release of Cloudy}",
+      journal = {\rmxaa},
+     keywords = {atomic data, galaxies: active, globular clusters: general, molecular data, software: development, Astrophysics - Astrophysics of Galaxies, Astrophysics - High Energy Astrophysical Phenomena},
+         year = 2023,
+        month = oct,
+       volume = {59},
+        pages = {327-343},
+          doi = {10.22201/ia.01851101p.2023.59.02.12},
+archivePrefix = {arXiv},
+       eprint = {2308.06396},
+ primaryClass = {astro-ph.GA},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2023RMxAA..59..327C},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+Rauch Stellar Atmosphere Grids:
+@ARTICLE{2003A&A...403..709R,
+       author = {{Rauch}, T.},
+        title = "{A grid of synthetic ionizing spectra for very hot compact stars from NLTE model atmospheres}",
+      journal = {\aap},
+     keywords = {planetary nebulae: general, stars: atmospheres, stars: early-type, stars: general, ultraviolet: stars, Astrophysics},
+         year = 2003,
+        month = may,
+       volume = {403},
+        pages = {709-714},
+          doi = {10.1051/0004-6361:20030412},
+archivePrefix = {arXiv},
+       eprint = {astro-ph/0303464},
+ primaryClass = {astro-ph},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2003A&A...403..709R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+

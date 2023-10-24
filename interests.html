@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Interests</title>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+   var lastModifiedElement = document.getElementById('lastModified');
+   var lastModifiedDate = new Date(document.lastModified);
+   var options = { year: 'numeric', month: 'long', day: 'numeric' };
+   lastModifiedElement.textContent = 'Last Modified: ' + lastModifiedDate.toLocaleDateString(undefined, options);
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Other Interests</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="interests.html">Other Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <ul>
+            <li>I love watching movies, specifically 90's action movies, and I am a big fan of Wim Wenders as well.
+                Follow me on <a href="https://letterboxd.com/AChaturvedi/">Letterboxd</a> to see what I've watched most recently!
+            </li>
+            <li>
+                I am a big fan of football (soccer), and follow many clubs throughout the major European leagues. I am a
+                diehard Liverpool fan for most intents and purposes
+            </li>
+            <li>
+                I enjoy playing most racquet sports, such as badminton, racquetball, and table tennis
+            </li>
+            <li>I enjoy photography, especially wildlife and black and white photography. Here is one of my favorite photographs, a picture of the <a href="https://en.wikipedia.org/wiki/Gateway_Arch">Gateway Arch</a> in Saint Louis, that I took on a visit in the winter of 2021</li>
+            <div class="interest-container">
+                <img src="images/stlArch.jpg" alt="Interest Image">
+            </div>
+    <!-- Add more list items as needed -->
+        </ul>
+    </main>
+</body>
+</html>

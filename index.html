@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Akshat Chaturvedi</title>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var lastModifiedElement = document.getElementById('lastModified');
+    var lastModifiedDate = new Date(document.lastModified);
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    lastModifiedElement.textContent = 'Last Modified: ' + lastModifiedDate.toLocaleDateString(undefined, options);
+    });
+    </script>
+
+</head>
+<body class="landing-page">
+    <div class="profile-picture">
+        <img src="images/myPicture.jpg" alt="Your Name">
+        <p class="caption">Your Caption</p>
+    </div>
+    <header>
+        <h1>Welcome to Akshat's Homepage</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="interests.html">Other Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Content for about page -->
+        <p>I am a 4th year undergraduate at the Pennsylvania State University, majoring in astrophysics and physics.
+            I'm hoping to go to graduate school to study stellar evolution and characteristics.</p>
+        <p>I am also the vice-president of the Penn State chapter of the <a href="https://sites.psu.edu/psusps/">Society of Physics Students</a>,
+            an organization made to enhance the undergraduate physics community, increase departmental interaction and advocate for causes
+        important to physics and physics-adjacent majors at Penn State.</p>
+        <a href="images/CV_Chaturvedi_11_10_23.pdf" download>Download CV</a>
+
+        <h2>Teaching</h2>
+        <h3>Learning Assistant</h3>
+        <ul>
+            <li>Physics 211: Calculus-based introduction to classical mechanics</li>
+            <li>Physics 212: Calculus-based introduction to electricity and magnetism</li>
+            <li>Astronomy and Astrophysics 291: Astronomical Methods and the Solar System</li>
+            <li>Astronomy and Astrophysics 292: Astronomy of the Distant Universe</li>
+        </ul>
+        <h2>Leadership</h2>
+        <h3>Society of Physics Students</h3>
+        <ul>
+            <li>Vice President 2023-2024</li>
+        </ul>
+        <h3>Penn State Residence Life</h3>
+        <ul>
+            <li>Residential Assistant 2023-2024</li>
+        </ul>
+        <h2>Outreach & DEI</h2>
+        <ul>
+            <li>Member, Astronomy & Astrophysics Department Climate & Diversity Committee</li>
+        </ul>
+        <p>As part of my position in Penn State Reslife, I am deeply involved in creating an open and welcoming community
+        for residents and students as a whole. I strive to make sure an inclusive environment is maintained in the residence
+        halls and that all residents feel safe and comfortable.</p>
+        <p>As a member of the climate and diversity committee in the astronomy and astrophysics department, I collaborate
+        with graduate students and faculty to ensure that members of the department, from undergraduates to general faculty
+        feel included and comfortable. Some specific projects that I am involved in are:</p>
+        <ul>
+            <li>Working to include feminine hygiene products in both gendered restrooms</li>
+            <li>Collaborating with SPS to run a CV/Resume workshop</li>
+            <li>Planning a departmental halloween party</li>
+        </ul>
+    </main>
+</body>
+</html>

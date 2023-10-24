@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Research</title>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var lastModifiedElement = document.getElementById('lastModified');
+    var lastModifiedDate = new Date(document.lastModified);
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    lastModifiedElement.textContent = 'Last Modified: ' + lastModifiedDate.toLocaleDateString(undefined, options);
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Research</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="interests.html">Other Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Current Projects</h2>
+        <h3>A Census of Blue Post-Horizontal Branch Stars in Galactic Globular Clusters</h3>
+        <p>Advisors: Dr Robin Ciardullo and Dr Howard Bond</p>
+        <h3>Identifying the Parameters of the Planetary Nebula Abell 57 (PN G058.6+06.1)</h3>
+        <p>Advisors: Dr Robin Ciardullo and Dr Howard Bond</p>
+        <h2>Past Projects</h2>
+        <h3>Determining Members of the 32 Ori Star Association</h3>
+        <p>Advisor: Dr Kevin Luhman</p>
+        <h3>Calculating the Age of the Sco-Cen Complex</h3>
+        <p>Advisor: Dr Kevin Luhman</p>
+    </main>
+</body>
+</html>
