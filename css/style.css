@@ -59,7 +59,7 @@ a {
 .profile-picture {
     width: 300px; /* Adjust the size as needed */
     height: 300px; /* Adjust the size as needed */
-    border: 2px solid #000; /* Change border color to black */
+    border: 2px solid #000; /* Set border properties */
     border-radius: 10px; /* Add rounded corners */
     overflow: hidden;
     position: absolute;
@@ -73,7 +73,7 @@ a {
     height: 100%;
     display: block;
     object-fit: cover; /* This ensures the image fills the square frame */
-    border-radius: 8px; /* Match the rounded corners of the border */
+    border-radius: 10px; /* Match the rounded corners of the border */
 }
 
 .interest-container {
