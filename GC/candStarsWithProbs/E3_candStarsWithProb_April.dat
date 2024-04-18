@@ -1,0 +1,6 @@
+# E3 E(B-V)=0.30, (m-M)_0 = 15.47
+# BlueFlag Note: if (V-I)0 > 0.331 + 1.444 * (B-V)0 thenBlueFlag = 0. Value of 1 is good.
+# Note: if BaumgardtCheck = 1, then there is atleast 1 member star within 3"of the candidate star in the cluster V&B21
+# File Created: 04/17/2024 (MM/DD/YYYY)
+# 	RA		Dec		(B-V)_0	M_u	M_B	M_V	u	B	V	I	BlueFlag	BaumgardtCheck
+358	09 20 47.997	-77 15 15.33	-0.18	-2.43	-2.33	-2.15	13.9381	13.7521	13.6396	13.4365	1	1
