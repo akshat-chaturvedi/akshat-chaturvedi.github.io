@@ -1,4 +1,4 @@
-Abell 57 Cloudy Write Up
+Abell 57 Cloudy Write U
 CEK:
 For the Abell 57 CEK, I used the dereddened line ratios, as provided by Robin, as input matching for Cloudy.
 I set up the input paramters as follows to obtain the ideal matches:
