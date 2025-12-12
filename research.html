@@ -1,58 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Research</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load footer.html content into #footer element
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Akshat S. Chaturvedi</title>
 
-                    // Set the last modified date once footer content is loaded
-                    var lastModifiedElement = document.getElementById('lastModified');
-                    var lastModifiedDate = new Date(document.lastModified);
-                    var options = { year: 'numeric', month: 'long', day: 'numeric' };
-                    lastModifiedElement.textContent = 'Last Modified: ' + lastModifiedDate.toLocaleDateString(undefined, options);
-                });
-        });
-    </script>
-</head>
-<body>
-<div class="wrapper">
-    <header>
-        <h1>Research</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="interests.html">Other Interests</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="images/CV_Chaturvedi_6_10_23-1.pdf">Curriculum Vitae</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Current Projects</h2>
-        <h3>A Census of Blue Post-Horizontal Branch Stars in Galactic Globular Clusters</h3>
-        <p>Advisors: Dr Robin Ciardullo and Dr Howard Bond</p>
-        <h2>Past Projects</h2>
-        <h3><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad4f84" target="_blank">A Spectroscopic Survey of the Planetary Nebula Abell 57</a></h3>
-        <p>Advisors: Dr Howard Bond and Dr Robin Ciardullo</p>
-        <p><a href="Research/A Spectroscopic Study of the Peculiar Planetary Nebula Abell 57.pdf"  target="_blank">Penn State Undergraduate Research Symposium Poster</a></p>
-        <h3>Determining Members of the 32 Ori Star Association</h3>
-        <p>Advisor: Dr Kevin Luhman</p>
-        <h3>Calculating the Age of the Sco-Cen Complex</h3>
-        <p>Advisor: Dr Kevin Luhman</p>
-    </main>
-</div>
-    <footer id="footer">
-        <div id="lastModified"></div>
-        <div id="imageCredit">Image Credit: [Your Credit Here]</div>
-    </footer>
-</body>
-</html>
+    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/styles1.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style></head>
+  <body data-new-gr-c-s-check-loaded="8.927.0" data-gr-ext-installed="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="wrapper">
+      <header>
+        <a href="index.html"><h1>Akshat S. Chaturvedi</h1></a>
+          <p>
+            Graduate Research Assistant
+          <br>
+          Georgia State University
+        </p>
+
+        <hr>
+        <div class="social">
+            <a class="social" href="https://github.com/akshat-chaturvedi"><i class="fab fa-github"></i></a>
+            <a class="social" href="https://orcid.org/0009-0008-0451-4435"><i class="ai ai-orcid ai-fw"></i></a>
+            <a class="social" href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&p_=0&q=author%3A%22Chaturvedi%2C%20Akshat%20S.%22%20orcid%3A0009-0008-0451-4435&sort=date%20desc%2C%20bibcode%20desc"><i class="ai ai-ads ai-fw"></i></a>
+            <br><br>
+        </div>
+        <hr>
+
+        <div id="nav">
+            <a id="nav" href="research.html"><i class="fa fa-star fa-fw"></i>&nbsp; Research</a>
+            <a id="nav" href="teaching.html"><i class="fa fa-chalkboard-teacher fa-fw"></i>&nbsp; Teaching</a>
+            <a id="nav" href="outreach.html"><i class="fa fa-users fa-fw"></i>&nbsp; Leadership & Outreach</a>
+            <a id="nav" href="about.html"><i class="fa fa-user fa-fw"></i>&nbsp; About Me</a>
+            <a id="nav" href="contact.html"><i class="fa fa-envelope fa-fw"></i>&nbsp; Contact</a>
+            <br><br>
+        </div>
+      </header>
+      <section>
+        <br>
+        <h2>Research Focus</h2>
+        <h3>Georgia State University</h3>
+          <p>
+              My primary research interests currently lie in finding the missing link of massive binary star evolution. These
+	      massive binaries are the most likely progenitors of hydrogen-deficient supernovae, Be X-ray binaries,
+	      double-compact-object binaries, and consequently, future gravitational wave sources. The following video
+	      illustrates the current model of massive binary evolution:
+	  </p>
+	  <!-- Embedded YouTube Video -->
+	  <div class="video-container">
+   	 	 <iframe width="560" height="315" 
+        	 	src="https://www.youtube.com/embed/pDDjEkGjV9U?si=WTR_K8gXWxhChPfS&amp;start=7" 
+       			title="YouTube video player" 
+		        frameborder="0" 
+		        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		        allowfullscreen>
+		 </iframe>
+	  </div>	
+	  <p><small><a href="https://www.eso.org/public/videos/eso1230b/"> Credit: ESO/L. Calçada/M. Kornmesser/S.E. de Mink </a></small></p>		 
+
+	  <p>	
+              I am working with Dr. Doug Gies on studying nearby Be+sdO binary star systems (similar the one shown in
+	      the video above) to determine their fundamental stellar parameters, with the goal of understanding their 
+	      evolutionary status. This project involves observing these systems with a multitude of different observatories, 
+	      instruments, and wavelength regimes. I am actively involved in collecting far-UV and optical spectroscopic 
+	      observations of these systems using the <i>Hubble Space Telescope</i>, Apache Point Observatory, and Cerro Tololo 
+	      Inter-American Observatory (CTIO). I am also part of ongoing observing programs that are gathering long-baseline 
+	      optical interferometry data on these systems using Georgia State's Center for High Angular Resolution Astronomy 
+	      (CHARA) Array and the Very Long Telescope Interferometer (VLTI).
+          </p>
+
+	<img class="header" src="img/eso0928d.jpg">
+	<p>
+	    <small><a href="https://www.eso.org/public/images/eso0928d/">The B[e] binary HD 87643 as imaged by ESO's MPG 2.2m, VLT, and VLTI telescopes respectively (ESO/F. Millour et al.)</a></small>
+	</p>
+
+          <p>
+              I have also been involved in Dr. Misty Bentz's work with conducting supporting observations for NASA's <i>Lucy</i>
+              spacecraft. I was part of a group led by Dr. Bentz that observed the Trojan asteroid <i>617 Patroclus</i>
+              and its companion <i>Menoetius</i> using the Miller 24-inch telescope at Georgia State's Hard Labor Creek Observatory.
+              Our work is detailed in <a href="https://ui.adsabs.harvard.edu/abs/2025MPBu...52...79B/abstract">this paper</a>
+          </p>
+
+
+        <h3>Pennsylvania State University</h3>
+          <p>
+              In my time at Penn State, I worked with Dr. Howard Bond and Dr. Robin Ciardullo on two distinct projects,
+              both aimed at understanding the post-asymptotic-giant-branch (post-AGB) stage of stellar evolution.
+          </p>
+          <p>
+              My first
+              project (which is currently ongoing) dealt with creating a census of blue, post-AGB stars in 100+ Galactic
+              globular clusters (GCs) using <i>uVBRI</i> photometry collected at CTIO as well as astrometric observations of
+              these stars obtained by the <i>Gaia</i> mission. The end goal of this project is to create the most complete
+              catalog of such stars in Galactic GCs and then test the hypothesis that these post-AGB stars are excellent
+              standard candle candidates (Bond, H. E. 1997, IAU Symp. 180, 460).
+          </p>
+
+          <p>
+              My second project involved a spectroscopic study of the planetary nebula <i>Abell 57</i>, believed to be
+              a member of the enigmatic class of <i>EGB6</i>-class of planetary nebulae (PNe). We analyzed optical spectra of
+              <i>Abell 57</i> obtained using the Hobby-Eberly Telescope's Low-Resolution Spectrograph (LRS-2B) to determine
+              emission line fluxes produced by this nebula. We subsequently used models from the photionization modeling
+              software <b>CLOUDY</b> to determine its fundamental characteristics. We also made use of NASA's <i>Neil Gehrels
+              Swift Observatory</i> to obtain UV photometric observations of <i>Abell 57</i> and complete our understanding of its
+              structure and shed some light on this mysterious class of PNe. The work from this project is detailed in
+              <a href="https://doi.org/10.3847/1538-4357/ad4f84">&nbsp this paper</a>
+          </p>
+
+        <br>
+        <h3>Publications</h3>
+        <p>Summary: 3 refereed publications<br><br>
+        See a comprehensive listing on my <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&p_=0&q=author%3A%22Chaturvedi%2C%20Akshat%20S.%22%20orcid%3A0009-0008-0451-4435&sort=date%20desc%2C%20bibcode%20desc">ADS page.</a>
+        </p>
+
+      </section>
+      <footer>
+        <p><small>© 2025 Akshat S. Chaturvedi</small><br>
+	   <small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small><br>
+           <small>Background Image: <a href="https://esawebb.org/images/weic2425c/">The Young Star-Forming Cluster NGC 602 (ESA/Webb, NASA & CSA, P. Zeidler, E. Sabbi, A. Nota, M. Zamani (ESA/Webb))</a></small><br>
+           <small>Last Modified: <span id="last-modified"></span></small></p>
+        </p>
+      </footer>
+
+        <script>
+        var lastModifiedDate = new Date(document.lastModified);
+
+        // Format the date as "February 5, 2025"
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        var formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
+
+        // Set the formatted date in the footer
+        document.getElementById('last-modified').textContent = formattedDate;
+        </script>
+    </div>
+    <script src="Homepage%20of%20Gregory%20A.%20Feiden%20_%20Astrophysicist%20at%20the%20University%20of%20North%20Georgia_files/scale.fix.js"></script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

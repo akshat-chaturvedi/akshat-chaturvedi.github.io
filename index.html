@@ -1,95 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Akshat Chaturvedi</title>
-     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load footer.html content into #footer element
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Akshat S. Chaturvedi</title>
 
-                    // Set the last modified date once footer content is loaded
-                    var lastModifiedElement = document.getElementById('lastModified');
-                    var lastModifiedDate = new Date(document.lastModified);
-                    var options = { year: 'numeric', month: 'long', day: 'numeric' };
-                    lastModifiedElement.textContent = 'Last Modified: ' + lastModifiedDate.toLocaleDateString(undefined, options);
-                });
-        });
-    </script>
+    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/styles1.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-</head>
-<body class="landing-page">
-    <div class="profile-picture">
-        <img src="images/DSC_3528.JPG" alt="Your Name">
-        <p class="caption">Your Caption</p>
+<!-- Font Awesome 6 Free (latest stable version from CDNJS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Academicons (hosted via jsDelivr, with correct font paths bundled) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <style>:is([id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#top-ad,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap__module,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container) {display:none!important;min-height:0!important;height:0!important;}</style></head>
+  <body data-new-gr-c-s-check-loaded="8.927.0" data-gr-ext-installed="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="wrapper">
+      <header>
+        <a href="index.html"><h1>Akshat S. Chaturvedi</h1></a>
+          <p>
+            Graduate Research Assistant
+          <br>
+            Georgia State University
+          </p>
+
+        <hr>
+        <div class="social">
+            <a class="social" href="https://github.com/akshat-chaturvedi"><i class="fab fa-github"></i></a>
+            <a class="social" href="https://orcid.org/0009-0008-0451-4435"><i class="ai ai-orcid ai-fw"></i></a>
+            <a class="social" href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&p_=0&q=author%3A%22Chaturvedi%2C%20Akshat%20S.%22%20orcid%3A0009-0008-0451-4435&sort=date%20desc%2C%20bibcode%20desc"><i class="ai ai-ads ai-fw"></i></a>
+            <br><br>
+        </div>
+        <hr>
+
+        <div id="nav">
+            <a id="nav" href="research.html"><i class="fas fa-star fa-fw"></i>&nbsp; Research</a>
+            <a id="nav" href="teaching.html"><i class="fas fa-chalkboard-teacher fa-fw"></i>&nbsp; Teaching</a>
+            <a id="nav" href="outreach.html"><i class="fas fa-users fa-fw"></i>&nbsp; Leadership & Outreach</a>
+            <a id="nav" href="about.html"><i class="fas fa-user fa-fw"></i>&nbsp; About Me</a>
+            <a id="nav" href="contact.html"><i class="fas fa-envelope fa-fw"></i>&nbsp; Contact</a>
+            <br><br>
+        </div>
+      </header>
+      <section>
+        <br>
+        <h2>Welcome</h2>
+        <p>
+            Hello! I am a PhD student and Graduate Research Assistant at <a href="https://physics-astro.gsu.edu/">Georgia State University</a>
+            in Atlanta, Georgia. I started at GSU in Fall 2024, and I work with Dr. Doug Gies. My research is focused on studying massive binary stars
+            in an effort to understand their evolution and what they can tell us about exotic astrophysical phenomena in the Universe.
+            You can read about this <a href="research.html">here</a>.
+        </p>
+        <p>
+            I attended <a href="https://science.psu.edu/astro">Pennsylvania State University</a> at University Park, Pennsylvania for my undergraduate studies. Here
+            I received bachelor's of science degrees in Astronomy & Astrophysics, and Physics, as well as a minor in
+            Mathematics.
+        </p>
+        <p>
+            My <a href="files/docs/Akshat_CV_2025.pdf">curriculum vitae</a>.
+        </p>
+	<p>
+	    You can find <a href=https://github.com/akshat-chaturvedi/CATCH>CATCH</a>, CHARA Array's Thrifty Calibrator Hunter, here!
+	</p>
+        <br>
+      </section>
+      <footer>
+        <p><small>© 2025 Akshat S. Chaturvedi</small><br>
+	   <small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small><br>
+           <small>Background Image: <a href="https://esawebb.org/images/weic2425c/">The Young Star-Forming Cluster NGC 602 (ESA/Webb, NASA & CSA, P. Zeidler, E. Sabbi, A. Nota, M. Zamani (ESA/Webb))</a></small><br>
+           <small>Last Modified: <span id="last-modified"></span></small></p>
+        </p>
+      </footer>
+
+        <script>
+        var lastModifiedDate = new Date(document.lastModified);
+
+        // Format the date as "February 5, 2025"
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        var formattedDate = lastModifiedDate.toLocaleDateString('en-US', options);
+
+        // Set the formatted date in the footer
+        document.getElementById('last-modified').textContent = formattedDate;
+        </script>
     </div>
-    <header>
-        <h1>Welcome to Akshat's Homepage</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="interests.html">Other Interests</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="images/CV_Chaturvedi_6_10_23-1.pdf">Curriculum Vitae</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Content for about page -->
-        <p>I am a 1st year astronomy graduate student at Georgia State University working with Dr. Doug Gies on Be+sdO binary star systems</p>
-
-<!--        <p>I am also the vice-president of the Penn State chapter of the <a href="https://sites.psu.edu/psusps/">Society of Physics Students</a>,-->
-<!--            an organization made to enhance the undergraduate physics community, increase departmental interaction and advocate for causes-->
-<!--        important to physics and physics-adjacent majors at Penn State.</p>-->
-<!--        <a href="images/CV_Chaturvedi_11_10_23.pdf" download>Download CV</a>-->
-<!--        <a href="images/Akshat_s_Resume-10.pdf" download>Download Resume</a>-->
-
-        <h2>Teaching</h2>
-        <h3>Georgia State University (Graduate Teaching Assistant)</h3>
-        <ul>
-            <li>Astronomy 1020 (Fall 2024): Stellar and Galactic Astronomy</li>
-        </ul>
-        <h3>Pennsylvania State University (Undergraduate Learning Assistant)</h3>
-        <ul>
-            <li>Physics 211: Calculus-based introduction to classical mechanics</li>
-            <li>Physics 212: Calculus-based introduction to electricity and magnetism</li>
-            <li>Astronomy and Astrophysics 291: Astronomical Methods and the Solar System</li>
-            <li>Astronomy and Astrophysics 292: Astronomy of the Distant Universe</li>
-        </ul>
-        <h2>Leadership</h2>
-        <h3></h3>
-        <h3><a href="https://sites.psu.edu/psusps/">Pennsylvania State University Society of Physics Students</a></h3>
-        <ul>
-            <li>Vice President 2023-2024</li>
-        </ul>
-        <h3>Penn State Residence Life</h3>
-        <ul>
-            <li>Residential Assistant 2023-2024</li>
-        </ul>
-        <p>As part of my position in Penn State Residence life, I was deeply involved in creating an open and welcoming community
-        for residents and students as a whole. I strived to make sure an inclusive environment was maintained in the residence
-        halls and that all residents felt safe and comfortable.</p>
-        <h2>Outreach & DEI</h2>
-        <ul>
-            <li>Member, Astronomy & Astrophysics Department Climate & Diversity Committee</li>
-        </ul>
-        <p>As a member of the climate and diversity committee in the astronomy and astrophysics department, I collaborated
-        with graduate students and faculty to ensure that members of the department, from undergraduates to general faculty
-        felt included and comfortable. Some specific projects that I was involved in are:</p>
-        <ul>
-            <li>Working to include feminine hygiene products in both gendered restrooms</li>
-            <li>Collaborating with SPS to run a CV/Resume workshop</li>
-            <li>Planning a departmental Halloween party</li>
-        </ul>
-    </main>
-
-</div>
-    <footer id="footer"></footer>
-</body>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
 </html>
