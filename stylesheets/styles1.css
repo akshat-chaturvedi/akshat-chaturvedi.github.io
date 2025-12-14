@@ -492,3 +492,16 @@ a {
   }
   
 }
+
+.letterboxd-box {
+  background: rgba(255, 255, 255, 1);              /* or #111, #f8f8f8, etc */
+  color: #000;                    /* Letterboxd text is dark */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Ensure embedded content inherits correctly */
+.letterboxd-box * {
+  background-color: transparent;
+}

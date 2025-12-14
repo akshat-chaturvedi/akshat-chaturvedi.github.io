@@ -72,6 +72,16 @@
             I love watching movies, specifically 90's action movies, and I am a big fan of Wim Wenders as well. Follow me
             on <a href="https://letterboxd.com/AChaturvedi/"> Letterboxd</a> to see what I've watched most recently!
         </p>
+        <div class="letterboxd-box">
+        <div id="letterboxd-embed-wrapper-tc">Loading...</div>
+        <script>
+        fetch('https://lb-embed-content.bokonon.dev?username=AChaturvedi')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('letterboxd-embed-wrapper-tc').innerHTML = data;
+        });
+        </script>
+        </div>
         <img class="header" src="img/about_four_faves.png">
         <br>
         <br>
@@ -80,6 +90,8 @@
             I enjoy playing and watching football, and I am a huge Liverpool fan (<i>Allez, allez, allez</i>).
         </p>
         <img class="header" src="img/liverpool_champions.jpg">
+        <br>
+        <br>
         <h2>Photography</h2>
         <p>
             I have been a photographer since I was 11 years old, and still continue to find time for this hobby. I specifically
