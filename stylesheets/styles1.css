@@ -306,40 +306,71 @@ a {
 /* Gallery Grid */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3x3 grid example */
   gap: 10px;
-  justify-content: center;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* Image Container */
+/* Thumbnail images: uniform square */
 .image-container {
-  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* Force square thumbnails */
   overflow: hidden;
   cursor: pointer;
-  display: inline-block; /* Makes sure the hover is tied to the image container size */
 }
 
-/* Image Style */
 .image-container img {
   width: 100%;
-  height: auto;
-  transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease, box-shadow 0.4s ease;
-  position: relative; /* Keeps image in the document flow */
-  display: block; /* Ensures the image is treated as a block element */
+  height: 100%;
+  object-fit: cover;   /* Fill square without distortion */
+  transition: transform 0.3s ease;
 }
 
-/* Hover Effect: Move to center and expand to 33% of the screen */
-.image-container:hover img {
-  position: fixed; /* Fix the image position to the viewport */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2); /* Zoom and center */
-  width: 33vw; /* Set width to 33% of viewport width */
-  height: auto;
+.image-container img:hover {
+  transform: scale(1.05); /* small hover zoom */
+}
+
+/* Modal styles */
+#image-modal {
+  display: none; /* hidden by default */
+  position: fixed;
   z-index: 9999;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#image-modal .modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#image-modal #caption {
+  margin: 15px auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 16px;
+}
+
+#image-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#image-modal .close:hover {
+  color: #bbb;
 }
 
 @media print, screen and (max-height: 650px) {
