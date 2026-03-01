@@ -536,3 +536,19 @@ a {
 .letterboxd-box * {
   background-color: transparent;
 }
+
+.name-container {
+    display: flex;
+    align-items: center;   /* vertically align gif with text */
+    justify-content: center; /* center the whole block in sidebar */
+    gap: 10px;             /* space between name and gif */
+}
+
+.name-container h1 {
+    margin: 0; /* remove default spacing */
+}
+
+.name-gif {
+    width: 100px;   /* adjust size as desired */
+    height: auto;
+}
