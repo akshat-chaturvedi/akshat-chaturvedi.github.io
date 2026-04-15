@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 
 body {
   padding:50px;
-  font:15px/1.5 "Avenir", Helvetica, Arial, sans-serif;
+  font:15px/1.5 "Ruluko", Helvetica, Arial, sans-serif;
   color: white;
   font-weight: normal;
 
@@ -42,6 +46,7 @@ body::before {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Almendra", serif;
   color:white;
   margin:0 0 20px;
 }
@@ -545,10 +550,40 @@ a {
 }
 
 .name-container h1 {
-    margin: 0; /* remove default spacing */
+  margin: 0; /* remove default spacing */
 }
 
 .name-gif {
     width: 100px;   /* adjust size as desired */
     height: auto;
+}
+
+.almendra-regular {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almendra-bold {
+  font-family: "Almendra", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.almendra-regular-italic {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.almendra-bold-italic {
+  font-family: "Almendra", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.ruluko-regular {
+  font-family: "Ruluko", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
