@@ -10,10 +10,19 @@ body {
   color: white;
   font-weight: normal;
 
+  /* Hyphenation */
+  hyphens: auto;
+  -webkit-hyphens: auto; /* Safari */
+  -ms-hyphens: auto;     /* older Edge/IE */
+
   /* Background Image */
   background: url('../img/background/blur_bg.jpg') no-repeat center center fixed;;
   background-size: cover;
   position: relative;
+}
+
+section p {
+  text-align: justify;
 }
 
 body::before {
