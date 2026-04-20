@@ -21,9 +21,9 @@ body {
   position: relative;
 }
 
-section p {
-  text-align: justify;
-}
+/*section p {*/
+/*  text-align: justify;*/
+/*}*/
 
 body::before {
   content: "";
