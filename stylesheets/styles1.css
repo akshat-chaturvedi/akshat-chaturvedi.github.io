@@ -572,6 +572,11 @@ a {
   margin: 0; /* remove default spacing */
 }
 
+.name-container a {
+    display: block;
+    width: 100%;
+}
+
 .name-gif {
     width: 100px;   /* adjust size as desired */
     height: auto;
