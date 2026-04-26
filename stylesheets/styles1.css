@@ -555,7 +555,7 @@ a {
 .name-container {
     display: flex;
     align-items: center;   /* vertically align gif with text */
-    justify-content: left; /* center the whole block in sidebar */
+    justify-content: center; /* center the whole block in sidebar */
     gap: 10px;             /* space between name and gif */
 }
 
