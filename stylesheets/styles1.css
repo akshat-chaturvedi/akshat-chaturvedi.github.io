@@ -508,6 +508,10 @@ a {
     float: none;
     width: 70%;
   }
+
+  .name-container {
+    justify-content: center;
+}
 }
 
 @media print, screen and (max-width: 480px) {
@@ -555,7 +559,7 @@ a {
 .name-container {
     display: flex;
     align-items: center;   /* vertically align gif with text */
-    justify-content: center; /* center the whole block in sidebar */
+    justify-content: flex-start; /* center the whole block in sidebar */
     gap: 10px;             /* space between name and gif */
 }
 
