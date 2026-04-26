@@ -511,7 +511,11 @@ a {
 
   .name-container {
     justify-content: center;
-}
+  }
+
+  .name-container h1 {
+    text-align: center;
+  }
 }
 
 @media print, screen and (max-width: 480px) {
@@ -561,6 +565,7 @@ a {
     align-items: center;   /* vertically align gif with text */
     justify-content: flex-start; /* center the whole block in sidebar */
     gap: 10px;             /* space between name and gif */
+    width: 100%;
 }
 
 .name-container h1 {
