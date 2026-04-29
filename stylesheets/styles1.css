@@ -9,6 +9,7 @@ body {
   font:15px/1.5 "Ruluko", Helvetica, Arial, sans-serif;
   color: white;
   font-weight: normal;
+  line-height: 1.35;
 
   /* Hyphenation */
   hyphens: auto;
